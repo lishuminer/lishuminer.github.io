@@ -87,7 +87,7 @@
 <meta property="og:description" content="《js第IV章分享——primitive values》">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-04-16T16:00:00.000Z">
-<meta property="article:modified_time" content="2021-04-19T12:38:45.281Z">
+<meta property="article:modified_time" content="2021-04-19T16:30:50.791Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
 
@@ -333,7 +333,10 @@
 <li><p>NaN是数字类型，不等于它本身。</p>
 </li>
 </ol>
-<h3 id="Math"><a href="#Math" class="headerlink" title="Math"></a>Math</h3><p>Math是一个具有数据属性和处理数字方法的对象。</p>
+<h3 id="Math"><a href="#Math" class="headerlink" title="Math"></a>Math</h3><p>Math是一个具有数据属性和处理数字方法的对象,用来执行常见的算数任务</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">Math</span>.PI <span class="comment">//3.141592653589793</span></span><br><span class="line"><span class="built_in">Math</span>.round(<span class="number">4.7</span>) <span class="comment">//5(四舍五入)</span></span><br><span class="line"><span class="built_in">Math</span>.random() <span class="comment">//返回一个介于 0 和 1 之间的随机数</span></span><br></pre></td></tr></table></figure>
+
+
 <h3 id="Bigints"><a href="#Bigints" class="headerlink" title="Bigints"></a>Bigints</h3><ol>
 <li>Bigints可以表示任意大的整数，数字后加一个n表示。</li>
 <li>Bigint是内置对象，但是使用 typeof 测试时,BigInt对象返回”bigint”：<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typeof</span> <span class="number">1n</span>;<span class="comment">//&quot;bigint&quot;</span></span><br><span class="line"><span class="keyword">typeof</span> <span class="number">1n</span> === <span class="string">&#x27;bigint&#x27;</span>; <span class="comment">// true</span></span><br><span class="line"><span class="keyword">typeof</span> BigInt(<span class="string">&#x27;1&#x27;</span>) === <span class="string">&#x27;bigint&#x27;</span>; <span class="comment">// true</span></span><br></pre></td></tr></table></figure></li>
